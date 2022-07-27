@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "petition_states",
+  "info": {
+    "singularName": "petition-state",
+    "pluralName": "petition-states",
+    "displayName": "Petition State",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string"
+    },
+    "petitions": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::petition.petition",
+      "mappedBy": "petition_state"
+    },
+    "vitor": {
+      "type": "richtext"
+    }
+  }
+}
