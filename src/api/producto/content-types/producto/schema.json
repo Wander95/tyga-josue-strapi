@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "productos",
+  "info": {
+    "singularName": "producto",
+    "pluralName": "productos",
+    "displayName": "Producto"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "stock": {
+      "required": true,
+      "type": "integer"
+    },
+    "expiration_date": {
+      "type": "datetime"
+    }
+  }
+}
